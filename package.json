@@ -1,0 +1,23 @@
+{
+  "name": "tricking-akademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efseb/tricking-akademy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efseb/tricking-akademy/issues"
+  },
+  "homepage": "https://github.com/efseb/tricking-akademy#readme",
+  "devDependencies": {
+    "gulp-imagemin": "^2.3.0",
+    "imagemin-pngquant": "^4.2.0"
+  }
+}
