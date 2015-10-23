@@ -4,10 +4,11 @@ var uglify =  require ("gulp-uglify");
 var rename =  require ("gulp-rename");
 var jshint=  require ("gulp-jshint");
 var stylish= require  ("jshint-stylish");
-// var gCrashSound = require('gulp-crash-sound');
 var sass        = require('gulp-sass');
 var connect     = require('gulp-connect');
 var open        = require('gulp-open');
+
+
 
 //cette  tache va s'occuper  des fichiers  JS
 gulp.task('process-scripts', function(){
@@ -19,6 +20,8 @@ gulp.task('process-scripts', function(){
 			   .pipe(uglify())
 			   .pipe(gulp.dest('./dist/'));
 });
+
+
 // cette  tache   s'occupe  de  verifier  les erreurs potentielles  sur les fichiers 
 gulp.task('lint-scripts' , function(){
 	return gulp.src('./sources/scripts/*.js')
@@ -55,6 +58,7 @@ gulp.task('connect', function(){
 gulp.task('watch', function(){
 	gulp.watch('./sources/scripts/*.js' , ['process-scripts' , 'lint-scripts']);
 	gulp.watch('./sources/styles/*.scss' , ['process-styles']);
+	gulp.watch('./*.html' , ['process-styles']);
 });
 
 gulp.task('open', function(){

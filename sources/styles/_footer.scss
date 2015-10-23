@@ -1,0 +1,22 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  a:link,
+  a:visited {
+    color: white;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  p { margin: 0 }
+}
