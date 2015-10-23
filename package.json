@@ -1,0 +1,25 @@
+{
+  "name": "tricking-akademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmpp/tricking-akademy.git"
+  },
+  "author": "jmpp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmpp/tricking-akademy/issues"
+  },
+  "homepage": "https://github.com/jmpp/tricking-akademy#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4"
+  }
+}

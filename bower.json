@@ -1,0 +1,24 @@
+{
+  "name": "tricking-akademy",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "jmpp"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jmpp/tricking-akademy",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery-colorbox": "colorbox#~1.6.3",
+    "moment": "momentjs#~2.10.6"
+  }
+}
