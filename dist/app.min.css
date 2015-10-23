@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* Variables */
+html {
+  background-image: url("../../images/background.png");
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  margin: 0; }
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+a:link,
+a:visited {
+  color: #2764c3;
+  text-decoration: underline; }
+
+a:hover {
+  color: #103773;
+  text-decoration: none; }
+
+a.btn {
+  color: #000;
+  text-decoration: none;
+  text-shadow: none; }
+
+body > section:last-of-type {
+  padding-bottom: 95px; }
+
+header {
+  background-color: #222; }
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  /* Affichage des liens en ligne, via le module de positionnement "Flexbox" de CSS3 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+header nav a {
+  display: block;
+  /* Le lien se comporte maintenant comme un bloc dimensionnable */
+  padding: 16px;
+  /* marge interne de 16 pixels sur le lien */ }
+
+header nav a:link,
+header nav a:visited {
+  color: white;
+  text-decoration: none;
+  /* Non souligné */
+  transition: all 0.6s; }
+
+header nav a:hover,
+header nav a.active {
+  padding-left: 48px;
+  padding-right: 48px;
+  color: black;
+  background-color: white; }
+
+#welcome {
+  overflow: hidden;
+  background-image: url("../../images/trick_grass.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  text-shadow: 0 2px 1px black; }
+
+#welcome h1 {
+  margin-top: 160px;
+  margin-bottom: 0;
+  font-size: 56px;
+  text-transform: uppercase;
+  /* mise en majuscules */ }
+
+#welcome p {
+  margin: 24px;
+  font-size: 32px; }
+
+/* .button {
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 16px;
+    background-color: rgb(255, 212, 74);
+    border-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s;
+  }
+  &:hover {
+    font-size: 1.2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+  }
+  &:active {
+    background-color: rgb(0, 43, 181);
+    color: white;
+    transition: none;
+  }
+} */
+.ninja,
+.street {
+  overflow: hidden;
+  background-image: url("../../images/trick_ninja.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  color: white; }
+
+.inner {
+  margin-top: 48px;
+  margin-bottom: 48px; }
+
+h1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 48px;
+  text-transform: uppercase; }
+
+p {
+  line-height: 32px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  text-align: center; }
+
+footer a:link,
+footer a:visited {
+  color: white;
+  text-decoration: underline; }
+
+footer a:hover {
+  text-decoration: none; }
+
+footer p {
+  margin: 0; }
+
+.video {
+  overflow: hidden;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+  /* Afin de positionner 1 fois sur 2 les blocs vidéos à gauche et à droite, on utilise le sélecteur CSS nth-child : */
+  /* Pour tous les éléments impairs (odd) qui portent la classe vidéo, on les positionne sur la gauche */
+  /* Et les mêmes éléments .video, mais qui sont pairs (even) seront positionnés sur la droite */ }
+
+.video:nth-child(odd) {
+  text-align: left; }
+
+.video:nth-child(odd) figure {
+  float: left;
+  margin-right: 16px; }
+
+.video:nth-child(even) {
+  text-align: right; }
+
+.video:nth-child(even) figure {
+  float: right;
+  margin-left: 16px; }
+
+.video:last-child {
+  border-bottom: none; }
+
+.event {
+  overflow: hidden;
+  position: relative;
+  padding: 16px;
+  margin: 32px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+
+.event h2 {
+  margin: 0; }
+
+.event h2 a:link,
+.event h2 a:visited {
+  color: black;
+  text-decoration: none; }
+
+.event h2 a:hover {
+  color: #2764c3; }
+
+.event figure {
+  margin: 0 16px 0 0;
+  float: left; }
+
+.event .event-date {
+  font-size: 14px;
+  margin: 0; }
+
+.event .readmore {
+  position: absolute;
+  bottom: 16px;
+  right: 16px; }
+
+.video figure,
+.event figure {
+  display: inline-block;
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ccc;
+  line-height: 0; }
+
+a.zoomin {
+  display: block;
+  overflow: hidden; }
+
+a.zoomin > img {
+  transition: all 0.6s;
+  transform: scale(1); }
+
+a.zoomin:hover > img {
+  transform: scale(1.2); }
+
+label {
+  display: block;
+  margin: 16px 0; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  /*   padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px; */
+  min-width: 250px; }
+
+textarea {
+  /* box-sizing: border-box;
+  width: 100%; */
+  min-height: 200px; }
+
+.actions {
+  text-align: center; }
+
+/* Eléments du formulaire sur la page contact */
+/* input[type="reset"],
+input[type="submit"] {
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  color: #333;
+   background-color: white;
+   border: 1px solid #ccc;
+}
+input[type="submit"] {
+  color: white;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+}
+
+input[type="reset"]:hover {
+  background-color: #e6e6e6;
+  border: 1px solid #adadad;
+}
+input[type="submit"]:hover {
+  background-color: #286090;
+  border: 1px solid #204d74;
+}*/
