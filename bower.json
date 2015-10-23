@@ -1,0 +1,19 @@
+{
+  "name": "tricking-akademy",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jordan GABORY <gaboryjordan@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gbn972/tricking-akademy",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "jquery-colorbox": "colorbox#~1.6.3",
+    "moment": "~2.10.6"
+  }
+}

@@ -1,8 +1,5 @@
 /* Variables */
-$images-path: '../../images';
-
-$link-color: rgb(39, 100, 195);
-$link-color-hover: rgb(16, 55, 115);
+@import 'variables.scss'
 
 html {
   background-image: url($images-path + '/background.png');
