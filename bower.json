@@ -1,0 +1,19 @@
+{
+  "name": "tricking-akademy",
+  "homepage": "https://github.com/Kihoru/tricking-akademy",
+  "authors": [
+    "Thomas Rigal <thomas.graph.rigal@gmail.com>"
+  ],
+  "description": "branch-tr",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
