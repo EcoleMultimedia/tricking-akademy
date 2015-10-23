@@ -1,0 +1,30 @@
+{
+  "name": "tricking-akademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmpp/tricking-akademy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmpp/tricking-akademy/issues"
+  },
+  "homepage": "https://github.com/jmpp/tricking-akademy#readme",
+  "devDependencies": {
+    "gulp-connect": "^2.2.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-open": "^1.0.0",
+    "gulp-processhtml": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "imagemin-pngquant": "^4.2.0",
+    "jshint-stylish": "^2.0.1"
+  }
+}
