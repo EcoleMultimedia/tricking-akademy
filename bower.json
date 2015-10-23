@@ -1,0 +1,28 @@
+{
+  "name": "tricking-akademy",
+  "description": "Pour les cours",
+  "main": "gulpfile.js",
+  "authors": [
+    "Corentin lejeune"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "azerty"
+  ],
+  "homepage": "https://github.com/HonoJigoku/tricking-akademy",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery-colorbox": "colorbox#~1.6.3",
+    "jquery": "~2.1.4",
+    "moment": "~2.10.6"
+  }
+}
