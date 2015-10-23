@@ -1,0 +1,19 @@
+{
+  "name": "tricking-akademy",
+  "description": "automatisation site triking",
+  "main": "gulpfile.js",
+  "authors": [
+    "Adam"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/InitialCrow/tricking-akademy",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
