@@ -1,0 +1,18 @@
+{
+  "name": "tricking-akademy",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Masson Marine <marine.mas9@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jmpp/tricking-akademy",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
