@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Évènements | Tricking Aka-demy</title>
+  
+  <!-- Inclusion des polices de caractère depuis le service "Google Fonts" -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Inclusion de la librairie Bootstrap -->
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+
+  <!-- La page web utilise le fichier de style 'main.css' -->
+  <link rel="stylesheet" href="sources/styles/main.css">
+</head>
+<body>
+
+<!-- Section d'entête (menu de la page) -->
+<header>
+  <nav class="container">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="videos.html">Vidéos</a></li>
+      <li><a class="active" href="evenements.html">Évènements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="container">
+  <div class="inner">
+
+    <h1>Les évènements</h1>
+    <p>Vous trouverez ici une liste des évènements passés et à venir autour du monde du tricking.</p>
+
+    <article class="event">
+      <h2><a href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/hooked-2014-la-franco-belgique-en-force/" target="_blank">Hooked 2014: la Franco-Belgique en Force!</a></h2>
+      <p class="event-date" data-event-date="Mon Dec 22 2014 09:13:59 GMT+0100 (Paris, Madrid)"></p>
+      <figure>
+        <a class="zoomin" href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/hooked-2014-la-franco-belgique-en-force/" target="_blank"><img src="images/events/hooked.jpg" alt="Hooked"></a>
+      </figure>
+      <p>Certains disaient 600 personnes, d’autres 400, ce qui est sûr, c’est que le <br>méga-gymnase était plein. Nous étions, grossomodo, une cinquantaine de francophones: Team Chakal, FDC, Les Keeps-L’envolée, Tdo crew, […]</p>
+      <a class="readmore" href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/hooked-2014-la-franco-belgique-en-force/" target="_blank">Lire la suite …</a>
+    </article>
+
+    <article class="event">
+      <h2><a href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/ac9-debrief-chaleur-a-licedvance-challenge-ix/" target="_blank">Chaleur à l’Icedvance Challenge IX</a></h2>
+      <p class="event-date" data-event-date="Sun Nov 09 2014 09:13:59 GMT+0100 (Paris, Madrid)"></p>
+      <figure>
+        <a class="zoomin" href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/ac9-debrief-chaleur-a-licedvance-challenge-ix/" target="_blank"><img src="images/events/advance-challenge.jpg" alt="Advance Challenge"></a>
+      </figure>
+      <p>Paris a vu sa température baisser de 10° en 3 jours, le Team Advance, lui, a perdu son système de chauffage, pourtant nous n’avons pas manqué de chaleur ce jour […]</p>
+      <a class="readmore" href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/ac9-debrief-chaleur-a-licedvance-challenge-ix/" target="_blank">Lire la suite …</a>
+    </article>
+
+    <article class="event">
+      <h2><a href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/la-tricking-party-2014-le-debrief/" target="_blank">La Tricking Party 2014</a></h2>
+      <p class="event-date" data-event-date="Sun Oct 05 2014 10:13:59 GMT+0200 (Paris, Madrid (heure d’été))"></p>
+      <figure>
+        <a class="zoomin" href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/la-tricking-party-2014-le-debrief/" target="_blank"><img src="images/events/tricking-party.jpg" alt="Tricking Party"></a>
+      </figure>
+      <p>13h du mat’ mon oeil le plus fort s’ouvre. Je prends quelques minutes pour analyser l’état général de mon organisme. L’absence de mal de tête me donne confiance et je […]</p>
+      <a class="readmore" href="http://www.trickzfr.com/articles-tricking/articles-tricking-events/la-tricking-party-2014-le-debrief/" target="_blank">Lire la suite …</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- Pied de page -->
+<footer>
+  <div class="container">
+    <p>Le site ci-présent et son contenu sont l'objet d'un travail pratique d'intégration de site web.</p>
+    <p>Les sources officielles proviennent majoritairement du site <a href="http://www.trickzfr.com/" target="_blank">www.trickzfr.com</a></p>
+  </div>
+</footer>
+
+<!-- Appel à la librairie jQuery -->
+<script src="lib/jquery/jquery.min.js"></script>
+<!-- Appel à la librairie "moment.js" et le fichier de locale Français -->
+<script src="lib/moment/moment.js"></script>
+<script src="lib/moment/fr.js"></script>
+<!-- Appel au fichier principal JS -->
+<script src="sources/scripts/app.js"></script>
+
+<script>
+  $(function() {
+    'use strict';
+    app.events.setDate('[data-event-date]');
+  });
+</script>
+
+</body>
+</html>
