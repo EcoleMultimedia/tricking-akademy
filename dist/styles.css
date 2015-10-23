@@ -1,10 +1,72 @@
+@charset "UTF-8";
 /* Variables */
-@import '_variables.scss';
-@import '_footer.scss';
-@import '_header.scss';
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer a:link,
+footer a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer p {
+  margin: 0;
+}
+
+header {
+  background-color: #222;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  /* Affichage des liens en ligne, via le module de positionnement "Flexbox" de CSS3 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  display: block;
+  /* Le lien se comporte maintenant comme un bloc dimensionnable */
+  padding: 16px;
+  /* marge interne de 16 pixels sur le lien */
+}
+
+header nav a:link,
+header nav a:visited {
+  color: white;
+  text-decoration: none;
+  /* Non souligné */
+  transition: all 0.6s;
+}
+
+header nav a:hover,
+header nav a.active {
+  padding-left: 48px;
+  padding-right: 48px;
+  color: black;
+  background-color: white;
+}
 
 html {
-  background-image: url($images-path + '/background.png');
+  background-image: url("../../images/background.png");
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,27 +80,30 @@ body {
   margin-right: auto;
 }
 
-a {
-  &:link,
-  &:visited {
-    color: $link-color;
-    text-decoration: underline;
-  }
-  &:hover {
-    color: $link-color-hover;
-    text-decoration: none;
-  }
-
-  &.btn { color: #000; text-decoration: none; text-shadow: none }
+a:link,
+a:visited {
+  color: #2764c3;
+  text-decoration: underline;
 }
 
-body > section:last-of-type { padding-bottom: 95px }
+a:hover {
+  color: #103773;
+  text-decoration: none;
+}
 
+a.btn {
+  color: #000;
+  text-decoration: none;
+  text-shadow: none;
+}
 
+body > section:last-of-type {
+  padding-bottom: 95px;
+}
 
 #welcome {
   overflow: hidden;
-  background-image: url($images-path + '/trick_grass.jpg');
+  background-image: url("../../images/trick_grass.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -47,17 +112,19 @@ body > section:last-of-type { padding-bottom: 95px }
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   text-shadow: 0 2px 1px black;
+}
 
-  h1 {
-    margin-top: 160px;
-    margin-bottom: 0;
-    font-size: 56px;
-    text-transform: uppercase; /* mise en majuscules */
-  }
-  p {
-    margin: 24px;
-    font-size: 32px;
-  }
+#welcome h1 {
+  margin-top: 160px;
+  margin-bottom: 0;
+  font-size: 56px;
+  text-transform: uppercase;
+  /* mise en majuscules */
+}
+
+#welcome p {
+  margin: 24px;
+  font-size: 32px;
 }
 
 /* .button {
@@ -87,11 +154,10 @@ body > section:last-of-type { padding-bottom: 95px }
     transition: none;
   }
 } */
-
 .ninja,
 .street {
   overflow: hidden;
-  background-image: url($images-path + '/trick_ninja.jpg');
+  background-image: url("../../images/trick_ninja.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -116,31 +182,36 @@ p {
   line-height: 32px;
 }
 
-
-
 .video {
   overflow: hidden;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ccc;
-
   /* Afin de positionner 1 fois sur 2 les blocs vidéos à gauche et à droite, on utilise le sélecteur CSS nth-child : */
   /* Pour tous les éléments impairs (odd) qui portent la classe vidéo, on les positionne sur la gauche */
-  &:nth-child(odd) { text-align: left; }
-  &:nth-child(odd) figure {
-    float: left;
-    margin-right: 16px;
-  }
   /* Et les mêmes éléments .video, mais qui sont pairs (even) seront positionnés sur la droite */
-  &:nth-child(even) { text-align: right; }
-  &:nth-child(even) figure {
-    float: right;
-    margin-left: 16px;
-  }
+}
 
-  &:last-child {
-    border-bottom: none;
-  }
+.video:nth-child(odd) {
+  text-align: left;
+}
+
+.video:nth-child(odd) figure {
+  float: left;
+  margin-right: 16px;
+}
+
+.video:nth-child(even) {
+  text-align: right;
+}
+
+.video:nth-child(even) figure {
+  float: right;
+  margin-left: 16px;
+}
+
+.video:last-child {
+  border-bottom: none;
 }
 
 .event {
@@ -151,32 +222,36 @@ p {
   background-color: rgba(0, 0, 0, 0.1);
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
 
-  h2 {
-    margin: 0;
-  }
-    h2 a:link,
-    h2 a:visited {
-      color: black;
-      text-decoration: none;
-    }
-    h2 a:hover {
-      color: $link-color;
-    }
+.event h2 {
+  margin: 0;
+}
 
-  figure {
-    margin: 0 16px 0 0;
-    float: left;
-  }
-  .event-date {
-    font-size: 14px;
-    margin: 0;
-  }
-  .readmore {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-  }
+.event h2 a:link,
+.event h2 a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.event h2 a:hover {
+  color: #2764c3;
+}
+
+.event figure {
+  margin: 0 16px 0 0;
+  float: left;
+}
+
+.event .event-date {
+  font-size: 14px;
+  margin: 0;
+}
+
+.event .readmore {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
 }
 
 .video figure,
@@ -191,14 +266,15 @@ p {
 a.zoomin {
   display: block;
   overflow: hidden;
+}
 
-  > img {
-    transition: all 0.6s;
-    transform: scale(1);
-  }
-  &:hover > img {
-    transform: scale(1.2);
-  }
+a.zoomin > img {
+  transition: all 0.6s;
+  transform: scale(1);
+}
+
+a.zoomin:hover > img {
+  transform: scale(1.2);
 }
 
 label {
@@ -209,7 +285,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-/*   padding: 8px;
+  /*   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: sans-serif;
@@ -228,7 +304,6 @@ textarea {
 }
 
 /* Eléments du formulaire sur la page contact */
-
 /* input[type="reset"],
 input[type="submit"] {
   padding: 8px;
